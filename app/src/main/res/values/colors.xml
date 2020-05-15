@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="Beyaz">#FFFFFF</color>
+    <color name="Login_Mavi">#0571AF</color>
+    <color name="Login_Mavi_Push">#004065</color>
+    <color name="inputbox_highlight_color">#0571AF</color>
+
+    <color name="gray">#E9E9E9</color>
+    <color name="siyah">#282C37</color>
+    <color name="turuncu">#FF5E3A</color>
+    <color name="CardViewSubTextGray">#6D819C</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="shadow">#1A1919</color>
+
+
+</resources>

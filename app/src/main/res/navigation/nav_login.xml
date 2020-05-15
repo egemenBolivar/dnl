@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_login"
+    app:startDestination="@id/login_fragment">
+
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.egemen.dinle.login.login_fragment"
+        tools:layout="@layout/login_layout"
+        android:label="login_fragment" >
+        <action
+            android:id="@+id/action_login_fragment_to_signup_fragment"
+            app:destination="@id/signup_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signup_fragment"
+        tools:layout="@layout/create_profile_layout"
+        android:name="com.egemen.dinle.login.signup_fragment"
+        android:label="signup_fragment" >
+        <action
+            android:id="@+id/action_signup_fragment_to_tel_no_fragment"
+            app:destination="@id/tel_no_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tel_no_fragment"
+        tools:layout="@layout/tel_no_layout"
+        android:name="com.egemen.dinle.login.tel_no_fragment"
+        android:label="tel_no_fragment" >
+        <action
+            android:id="@+id/action_tel_no_fragment_to_login_fragment"
+            app:popUpTo="@+id/login_fragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/login_fragment" />
+    </fragment>
+</navigation>

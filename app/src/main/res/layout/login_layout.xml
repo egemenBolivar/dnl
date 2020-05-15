@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:layout_editor_absoluteY="25dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="180dp"
+                android:src="@drawable/kitap"
+                android:layout_height="180dp" />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="0dp">
+
+
+
+
+
+                <EditText
+                    android:id="@+id/login_email"
+                    style="@style/main_input_text"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="50dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="0dp">
+
+
+
+
+                <EditText
+                    android:id="@+id/login_sifre"
+                    style="@style/main_input_text"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:hint="Şifre"
+                    android:inputType="textPassword"
+                    android:paddingLeft="50dp" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/login_girisyap_buton"
+            android:layout_gravity="center"
+            android:layout_width="327dp"
+            android:layout_height="40dp"
+            android:textColor="@color/Beyaz"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/buton_ripple_selector"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="GİRİŞ YAP"
+            android:textSize="16dp" />
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="21dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/login_kayitol_buton"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Login_Mavi"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground"
+                android:text="Kayıt ol "
+                android:textSize="16dp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Beyaz"
+
+        android:theme="@style/AppTheme.NoActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_back_register"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+
+
+                android:text="Button" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="20dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="12dp"
+
+                    android:gravity="center"
+                    android:text="GİRİŞ YAP"
+                    android:textColor="@color/siyah"
+                    android:textSize="19dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:id="@+id/login_screen_loading_layout"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/shadowView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/shadow"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.459" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

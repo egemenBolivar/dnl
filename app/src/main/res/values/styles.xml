@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+
+
+        <item name="android:statusBarColor">@color/transparent</item>
+    </style>
+    <style name="main_input_text">
+        <item name="android:maxLength">50</item>
+        <item name="android:inputType">text</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="colorAccent">@color/inputbox_highlight_color</item>
+
+        <item name="android:textColorHint">@color/inputbox_highlight_color</item>
+
+    </style>
+    <style name="text_input_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:colorAccent">@color/inputbox_highlight_color</item>
+        <item name="android:background">@drawable/edit_text_custom</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+
+</resources>

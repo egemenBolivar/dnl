@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/messagesActivity">
+
+    <fragment
+        android:id="@+id/mesajlar_fragment"
+        android:name="com.egemen.dinle.holder.begeni_fragment"
+        tools:layout="@layout/kitaplar_layout"
+        android:label="mesajlar_fragment" />
+    <fragment
+        android:id="@+id/messagesActivity"
+        tools:layout="@layout/kitaplar_layout"
+        android:name="com.egemen.dinle.holder.holderActivity"
+        android:label="messagesActivity" />
+</navigation>
